@@ -6,25 +6,11 @@ Deleted all sqllite and CrouchDB functions.Combined esplugin_mysql.
 ## Dependencies
 - mysql-async  
 
+## 原理
+- 玩家進入遊戲時觸發client\main.lua內的es:firstJoinProper通知服務端檢測DB，建立玩家數據或允許登入，建立玩家的服務端基本參數暫存。
+旁邊的es:allowedToSpawn用於其他客戶端插件檢測es在客戶端開始運作  
+由server\main.lua得知玩家離線儲存玩家數據，得出玩家連接檢測是否有具備識別號，若沒有禁止進入服務器。通知客戶端玩家首次出生了，以及記錄坐標接口。
 
-## Support development
-Hey, thank you very much for trying out my software. If you'd like to support continued development I'd very much appreciate if you'd pledge any amount to: https://www.patreon.com/gdevelopment
+## Orginal essentialmode readme.md
 
-## Description
-EssentialMode is a FiveM resource which is used to bring a central management interface for other resources. It handles player data saving like their money, groups and roles and makes these easily usable by other resources.
-
-## Features
-- Advanced permission system
-- Easily create new commands which can interface with EssentialMode
-- Logging for every action if enabled
-- Clean readable code
-- Attempt at OOP for easy usage
-
-## Installation
-Please follow this guide: https://docs.kanersps.pw/docs/essentialmode/installation
-
-## Documentation
-Documentation for EssentialMode can be found at: https://docs.kanersps.pw/docs/essentialmode/
-
-# Rent a server with EssentialMode pre-installed!
-Go to https://zap-hosting.com/EssentialMode and use code `kanersps-a-2529` for 10% off on all products for life! They will even install EssentialMode for you!
+- https://github.com/kanersps/essentialmode
