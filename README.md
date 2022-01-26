@@ -1,7 +1,11 @@
 # EssentialMode Simple
 
 ## Simple? What does it mean?
-Deleted all sqllite and CrouchDB functions.
+Deleted all sqllite and CrouchDB functions.Combined esplugin_mysql. 
+
+## Dependencies
+- mysql-async  
+
 
 ## Support development
 Hey, thank you very much for trying out my software. If you'd like to support continued development I'd very much appreciate if you'd pledge any amount to: https://www.patreon.com/gdevelopment

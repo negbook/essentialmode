@@ -31,3 +31,7 @@ server_exports {
 	'log',
 	'debugMsg',
 }
+
+dependencies {
+	'mysql-async'
+}
