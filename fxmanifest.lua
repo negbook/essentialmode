@@ -8,24 +8,16 @@ games { 'gta5' }
 description 'EssentialMode by Kanersps.'
 
 server_scripts {
-	'server/sqlite/SQLite.net.dll',
-	'server/sqlite/sqlite.js',
-	'config.lua',
 	'server/util.lua',
 	'server/main.lua',
 	'server/db.lua',
 	'server/classes/player.lua',
 	'server/classes/groups.lua',
-	'server/player/login.lua',
-	'server/metrics.lua'
+	'server/player/login.lua'
 }
 
 client_scripts {
 	'client/main.lua'
-}
-
-exports {
-	'getUser'
 }
 
 server_exports {
