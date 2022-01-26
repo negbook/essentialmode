@@ -2,6 +2,8 @@
 --  GNU AFFERO GENERAL PUBLIC LICENSE  --
 --     Version 3, 19 November 2007     --
 
+-- Dont Register Events Here , Or Client Can Send Events to the Server
+
 
 AddEventHandler('es_db:doesUserExist', function(identifier, callback)
 	MySQL.Async.fetchScalar('SELECT COUNT(1) FROM users WHERE identifier = @identifier', { ['@identifier'] = identifier }, function(users)
